@@ -185,6 +185,17 @@ npm install && npm run dev
 
 ## Documentation
 
+### Developer Onboarding
+
+New to the Certen Protocol? Start here:
+
+1. [Welcome & Reading Guide](onboarding/01-welcome.md)
+2. [Ecosystem Overview](onboarding/02-ecosystem-overview.md)
+3. [Architecture Deep Dive](onboarding/03-architecture-deep-dive.md)
+4. [Data Flow Walkthrough](onboarding/04-data-flow-walkthrough.md)
+5. [Development Environment Setup](onboarding/05-dev-environment-setup.md)
+6. [Glossary](onboarding/06-glossary.md)
+
 ### Component Documentation
 
 Each repository contains its own detailed README:
@@ -200,11 +211,43 @@ Each repository contains its own detailed README:
 
 ### Detailed Documentation
 
-- [Miner Architecture](miner/architecture.md) - System design and data flow
-- [Miner Algorithms](miner/algorithms.md) - LXR proof-of-work details
-- [Miner Networking](miner/networking.md) - LibP2P protocols
-- [Miner Deployment](miner/setup-deployment.md) - Production deployment
-- [Miner Development](miner/development-guide.md) - Contributing guide
+**Validator**:
+- [Overview](validator/README.md) - Package structure, CLI, API endpoints
+- [Architecture](validator/architecture.md) - System design, CometBFT ABCI, chain strategies
+- [Consensus & Proofs](validator/consensus-and-proofs.md) - BFT consensus, 9-phase proof cycle, ZK proofs
+- [Setup & Deployment](validator/setup-deployment.md) - Configuration, Docker, production deployment
+- [Development Guide](validator/development-guide.md) - Code organization, testing, extending
+
+**API Bridge**:
+- [Overview](api-bridge/README.md) - 30+ REST endpoints, two-phase signing
+- [Architecture](api-bridge/architecture.md) - Express structure, chain handlers, intent service
+
+**Web App**:
+- [Overview](web-app/README.md) - Pages, components, contexts, Firebase integration
+- [Architecture](web-app/architecture.md) - React structure, state management, Key Vault integration
+
+**Key Vault**:
+- [Overview](key-vault/README.md) - Security model, key types, HD wallet
+- [Architecture](key-vault/architecture.md) - Manifest V3, message protocol, crypto modules
+
+**Pending Service**:
+- [Overview](pending-service/README.md) - Discovery algorithm, Firestore data model
+
+**Proofs Service**:
+- [Overview](proofs-service/README.md) - REST API reference, Proof Explorer
+- [Architecture](proofs-service/architecture.md) - Database schema, repository pattern
+
+**Smart Contracts**:
+- [Overview](contracts/README.md) - Core contracts, platform status, build commands
+- [Architecture](contracts/architecture.md) - EVM design, CertenAnchorV3, account abstraction
+
+**Miner**:
+- [Overview](miner/README.md) - Quick reference and ADRs
+- [Architecture](miner/architecture.md) - System design and data flow
+- [Algorithms](miner/algorithms.md) - LXR proof-of-work details
+- [Networking](miner/networking.md) - LibP2P protocols
+- [Deployment](miner/setup-deployment.md) - Production deployment
+- [Development](miner/development-guide.md) - Contributing guide
 
 ## Security
 
